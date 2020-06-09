@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-bkaritasjensen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rts-cmk-wuhf02/praktikperiode-portfolio-bkaritasjensen.git"
+  },
+  "author": "Bianca Karitas Jensen",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "ejs": "^2.7.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^4.1.2",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rts-cmk-wuhf02/praktikperiode-portfolio-bkaritasjensen/issues"
+  },
+  "homepage": "https://github.com/rts-cmk-wuhf02/praktikperiode-portfolio-bkaritasjensen#readme"
+}

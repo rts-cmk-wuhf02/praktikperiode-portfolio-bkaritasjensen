@@ -1,0 +1,43 @@
+
+<% include ../partials/head %>
+<div class="player__opacityBackground">
+<main class="player__mainBackground">
+	<section class="">
+		<% include ../partials/top-navAlbum %>
+		<p class="player__artistProfilePhotoBorderOuterBorder">
+			<p class="player__artistProfilePhotoBorder">
+				<img class="player__artistProfilePhoto" src="/assets/images/man-smoke.jpg" alt="Artist profile">
+			</p>
+		</p>
+		<div class="player__songInfo">
+			<h4 class="player__songInfoArtistName">Kevin MacLeod</h4>
+			<p class="player_songInfoArtist">Wholesome</p>
+		</div>
+	</section>
+	<section>
+		<div class="player__playerLine">
+			<div class="player__playerCircleBorder">
+				<p class="player__playerCircle"></p>
+			</div>
+		</div>
+		<div class="player__SongTime">
+			<p class="player__songTimeText">0:00</p>
+			<p class="player__songTimeText">6:03</p>
+		</div>
+		<div class="player__playerIcons">
+			<i class="fas fa-angle-left"></i>
+			<i class="fas fa-angle-double-left"></i>
+			<i onclick="document.getElementById('player').play()" class="fas fa-play"></i>
+			<i class="fas fa-angle-double-right"></i>
+			<i class="fas fa-angle-right"></i>
+			</div>
+	</section>
+	<audio id="player" src="/assets/images/5050-wholesome-by-kevin-macleod.mp3"></audio>
+	<div>
+		<button onclick="document.getElementById('player').pause()">Pause</button>
+	</div> 
+</main>
+</div>
+
+<!-- <script src="/assets/js/player.js"></script> -->
+<% include ../partials/after-footer %>

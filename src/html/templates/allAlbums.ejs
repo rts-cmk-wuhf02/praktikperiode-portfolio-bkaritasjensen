@@ -1,0 +1,67 @@
+<% include ../partials/head %>
+<main class="main__featured">
+	<% include ../partials/top-nav %>
+	<h1 class="featured__headText">All Albums</h1>
+	<section>
+		<div class="featuredAlbums__headerText">
+			<p class="featuredAlbums__headtext">Featured Albums</p>
+			<a href="/"><p class="featuredAlbums__headLink">View All</p></a>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper featuredAlbums-cardListImage">
+				<!----------------- INDSÆT ALBUM GALLERI ----------------------->
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="featuredAlbums__headerText">
+			<p class="featuredAlbums__headtext">New Releases</p>
+			<a href="/"><p class="featuredAlbums__headLink">View All</p></a>
+		</div>
+		<ul class="featuredAlbums_cardListList">
+			<!--------------------- INDSÆT ALBUM LISTE ------------------------->
+		</ul>
+	</section>
+</main>
+
+<!------------------------ TEMPLATE ------------------------------>
+<!-- ALBUM GALLERI -->
+<template id="featuredAlbums-imagesTemplate">
+	<div class="swiper-slide">
+		<a id="featuredAlbums__template" href="/albumDetails">
+			<img class="featuredAlbums__images" src="" alt="image album">
+		</a>
+	</div>
+</template>
+
+<!-- ALBUM LISTE -->
+<template id="featuredAlbums-listsTemplate">
+	<div class="featuredAlbums__albumsList">
+		<div class="featuredAlbums__albumsListFlex">
+			<img class="featuresAlbums__imageAlbumList" src="" alt="image album">
+			<div class="featureAlbums__albumsListInfo">
+				<div class="featuredAlbums__albumsListInfoName">
+					<h4 class="featuredAlbums__albumsListAlbumName overflow"></h4>
+					<p class="featuredAlbums__albumsListAlbumArtist overflow"></p>
+				</div>
+				<p class="featuredAlbums__albumListSongNr"></p>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script src="/assets/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+</script>
+
+<script src="/assets/js/allAlbums.js"></script>
+<% include ../partials/footer %>
+<% include ../partials/after-footer %>

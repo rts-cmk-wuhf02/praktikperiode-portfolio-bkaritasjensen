@@ -1,0 +1,17 @@
+  
+.footer__icons {
+	i {
+		display: inline-block;
+		padding-top: 3%;
+		background: $gradient-color;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		vertical-align: middle;
+	}
+	.fa-record-vinyl {
+		font-size: 2.3em;
+	}
+	a i .fa-stream{
+		letter-spacing: unset;
+	}
+}
