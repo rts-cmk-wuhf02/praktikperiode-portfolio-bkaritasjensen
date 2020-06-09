@@ -134,7 +134,8 @@ html[data-theme='dark']{
     margin-left: 70px;
     width: 900px;
     height: 600px;
-    box-shadow: -3px 3px 10px #707070; }
+    box-shadow: -3px 3px 10px #707070;
+    border-radius: 2px; }
     .main__homePage .homePage__innerMain .homePage__headerTitle {
       margin: 0;
       padding-top: 100px;
@@ -171,5 +172,29 @@ html[data-theme='dark']{
   top: 30px;
   z-index: 10;
   right: 10px; }
+  .nav .close:before, .nav .close:after {
+    position: absolute;
+    left: 24px;
+    top: 9px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #2E3640; }
+  .nav .close:before {
+    transform: rotate(90deg);
+    top: 6px; }
+  .nav .close:after {
+    transform: rotate(-90deg);
+    top: 12px; }
   .nav ul {
     display: none; }
+
+.nav:hover {
+  width: 70px;
+  height: 70px;
+  transition: 1s ease-in; }
+  .nav:hover .close:before, .nav:hover .close:after {
+    height: 53px;
+    width: 3px;
+    left: 33px;
+    transition: 1s ease-in; }
