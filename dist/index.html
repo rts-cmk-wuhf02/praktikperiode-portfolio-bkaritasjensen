@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>iPlay Awesome Music</title>
+    <title>Karitas Webdesign</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/80821de148.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-<main class="main__featured">
-	<nav>
-    <a onclick="goBack()"><i class="fas fa-chevron-left"></i></a>
-    <p class="nav">featured</p>
-    <i class="fas fa-search"></i>
+<nav class="nav">
+	<ul>
+		<li>Om Mig</li>
+		<li>Projekter</li>
+		<li>Kontakt</li>
+	</ul>
 </nav>
-	<h1 class="featured__headText">Featured</h1>
-	<div id="featured-cardList">
-		<!---------------------------INDSÆT TEMPLATE------------------->
+<main class="main__homePage">
+	<div class="homePage__innerMain">
+		<section class="homePage__headerTitle">
+			<h1>Karitas Webdesign</h1>
+			<h6>Af Bianca Karitas Jensen, Webudvikler</h6>
+		</section>
+		<section class="homePage__slogan">
+			<h4>Simpelt Design</h4>
+			<h4>Smarte Løsninger</h4>
+		</section>
 	</div>
 </main>
 
 <!-------------------------------------LAVER TEMPLATE-------------------->
 <template id="featured-template">
-		<!-- <div class="featured__textInfo">
-			<h3 class="featured__headerText">The Greatest Showman</h3>
-			<p class="featured__text">Soundtrack</p> 
-		</div> -->
 		<div class="featured__imageShadow1">
 			<a class="featured__imagesLink" href="">
 				<img class="featured__images" src="" alt="image featured">
@@ -37,15 +43,6 @@
 </template>
 
 <script src="/assets/js/featured.js"></script>
-<footer>
-	<div class="footer__icons">
-		<a href="/allAlbums"><i class="fas fa-wave-square"></i></a>
-		<a href="/playlists"><i class="fas fa-microphone-alt"></i></a>
-		<a href="/"><i class="fas fa-record-vinyl"></i></a>
-		<a href=""><i class="fas fa-adjust change-theme"></i></a>
-		<a href="/categories"><i class="fas fa-stream"></i></a>
-	</div>
-</footer>
 
 <script src="/assets/js/tema.js"></script>
 <script src="/assets/js/historyBack.js"></script>

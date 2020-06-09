@@ -1,19 +1,21 @@
 
 <% include ../partials/head %>
-<main class="main__featured">
-	<% include ../partials/top-nav %>
-	<h1 class="featured__headText">Featured</h1>
-	<div id="featured-cardList">
-		<!---------------------------INDSÆT TEMPLATE------------------->
+<% include ../partials/nav %>
+<main class="main__homePage">
+	<div class="homePage__innerMain">
+		<section class="homePage__headerTitle">
+			<h1>Karitas Webdesign</h1>
+			<h6>Af Bianca Karitas Jensen, Webudvikler</h6>
+		</section>
+		<section class="homePage__slogan">
+			<h4>Simpelt Design</h4>
+			<h4>Smarte Løsninger</h4>
+		</section>
 	</div>
 </main>
 
 <!-------------------------------------LAVER TEMPLATE-------------------->
 <template id="featured-template">
-		<!-- <div class="featured__textInfo">
-			<h3 class="featured__headerText">The Greatest Showman</h3>
-			<p class="featured__text">Soundtrack</p> 
-		</div> -->
 		<div class="featured__imageShadow1">
 			<a class="featured__imagesLink" href="">
 				<img class="featured__images" src="" alt="image featured">
@@ -22,5 +24,4 @@
 </template>
 
 <script src="/assets/js/featured.js"></script>
-<% include ../partials/footer %>
 <% include ../partials/after-footer %>
