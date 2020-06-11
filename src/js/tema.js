@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
 	// FINDER DEN SIDST VALGTE TEMA
 	var currentTheme = localStorage.getItem('current-theme');
 	document.documentElement.setAttribute('data-theme', currentTheme);
@@ -19,4 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
 			localStorage.setItem('current-theme', 'light')
 		}
 	})
-});
+}); */

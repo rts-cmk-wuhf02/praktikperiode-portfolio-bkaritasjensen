@@ -1,0 +1,57 @@
+.omMig__main{
+	background-color: $base-background;
+	position: relative;
+	margin: 0;
+
+	.omMig__profilBillede{
+		max-width: 15vw;
+		z-index: 250;
+		position: absolute;
+		top: -115px;
+		border-radius: 50%;
+		left: 17vw;
+	}
+	.omMig__faerdigheder{
+		background-color: $third-background;
+		height: 600px;
+		width: 60vw;
+		margin-top: 250px;
+		margin-left: 30vw;
+		margin-right: 5vw;
+		margin-bottom: 100px;
+		box-shadow: -3px 3px 10px #707070;
+
+		h3{
+			margin-right: 25px;
+			font-weight: lighter;
+			font-size: 1.5em;
+		}
+		.single__erfaringer{
+			margin: 50px 25px;
+			width: 45%;
+
+			.ydreBox__prikErfaringer{
+				display: flex;
+				
+				.prikErfaringer{
+					align-self: center;
+					width: 25px;
+					height: 25px;
+					background-color: white;
+					margin: 3px;
+					border-radius: 50%;
+				}
+			}
+		}
+		.single__erfaringer:first-child{
+			margin: 0 25px  50px 25px;
+		}
+		
+		
+		
+	}
+
+
+
+
+}

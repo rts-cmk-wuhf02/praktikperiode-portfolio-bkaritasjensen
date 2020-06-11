@@ -1,6 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #F0F0EF; }
+
+.navOn__mainDown {
+  margin: 100px;
+  transition: 1s ease-out; }
+
+.navOut__mainUp {
+  margin: 0;
+  transition: .6s ease-in; }
 
 /* font-family: 'Permanent Marker', cursive; */
 /* ////////////////////////////// LIGHT THEME ////////////////////////////
@@ -129,6 +138,47 @@ html[data-theme='dark']{
   height: 100vh;
   position: relative;
   padding-top: 70px; }
+  .main__homePage .computerScreen {
+    position: absolute;
+    max-width: 250px;
+    left: 60vw;
+    top: 350px; }
+  .main__homePage .smartphone {
+    position: absolute;
+    max-width: 100px;
+    left: 65vw;
+    top: 260px; }
+  .main__homePage .tablet {
+    position: absolute;
+    max-width: 150px;
+    left: 73vw;
+    top: 250px; }
+  .main__homePage .linkDevice:hover {
+    animation: shake 0.5s; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
   .main__homePage .homePage__innerMain {
     background-color: #F0F0EF;
     margin-left: 70px;
@@ -171,7 +221,12 @@ html[data-theme='dark']{
   position: absolute;
   top: 30px;
   z-index: 10;
-  right: 10px; }
+  right: 10px;
+  -webkit-transition: 1s ease-out;
+  -moz-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  -ms-transition: 1s ease-out;
+  transition: 1s ease-out; }
   .nav .close:before, .nav .close:after {
     position: absolute;
     left: 24px;
@@ -179,22 +234,89 @@ html[data-theme='dark']{
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #2E3640; }
+    background-color: #2E3640;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    transition: 1s ease-out; }
   .nav .close:before {
     transform: rotate(90deg);
     top: 6px; }
   .nav .close:after {
     transform: rotate(-90deg);
     top: 12px; }
-  .nav ul {
-    display: none; }
+
+#links {
+  display: none; }
+
+ul li a {
+  text-decoration: none;
+  color: #2E3640; }
+
+ul li {
+  margin: 20px; }
+
+#links.show {
+  display: block; }
+
+.linksElements {
+  font-family: 'Permanent Marker', cursive;
+  width: 80vw;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; }
+  .linksElements a {
+    text-decoration: none;
+    color: #2E3640; }
+  .linksElements li {
+    margin: 20px; }
 
 .nav:hover {
   width: 70px;
   height: 70px;
-  transition: 1s ease-in; }
+  transition: 0.4s ease-in; }
   .nav:hover .close:before, .nav:hover .close:after {
     height: 53px;
     width: 3px;
     left: 33px;
-    transition: 1s ease-in; }
+    transition: .4s ease-in; }
+
+.omMig__main {
+  background-color: #F0F0EF;
+  position: relative;
+  margin: 0; }
+  .omMig__main .omMig__profilBillede {
+    max-width: 15vw;
+    z-index: 250;
+    position: absolute;
+    top: -115px;
+    border-radius: 50%;
+    left: 17vw; }
+  .omMig__main .omMig__faerdigheder {
+    background-color: #F2B164;
+    height: 600px;
+    width: 60vw;
+    margin-top: 250px;
+    margin-left: 30vw;
+    margin-right: 5vw;
+    margin-bottom: 100px;
+    box-shadow: -3px 3px 10px #707070; }
+    .omMig__main .omMig__faerdigheder h3 {
+      margin-right: 25px;
+      font-weight: lighter;
+      font-size: 1.5em; }
+    .omMig__main .omMig__faerdigheder .single__erfaringer {
+      margin: 50px 25px;
+      width: 45%; }
+      .omMig__main .omMig__faerdigheder .single__erfaringer .ydreBox__prikErfaringer {
+        display: flex; }
+        .omMig__main .omMig__faerdigheder .single__erfaringer .ydreBox__prikErfaringer .prikErfaringer {
+          align-self: center;
+          width: 25px;
+          height: 25px;
+          background-color: white;
+          margin: 3px;
+          border-radius: 50%; }
+    .omMig__main .omMig__faerdigheder .single__erfaringer:first-child {
+      margin: 0 25px  50px 25px; }

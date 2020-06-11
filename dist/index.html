@@ -13,19 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="nav">
+
+<div id="links">
+	<ul>
+		<li><a href="/">Forsiden</a></li>
+	</ul>
+	<ul class="linksElements">
+		<li><a href="/ommig" >Om Mig</a></li>
+		<li><a href="" >Projekter</a></li>
+		<li><a href="" >Kontakt</a></li>
+	</ul>
+</div>
+<nav class="nav close" id="clickNav">
 	<a class="close">
-		<ul>
-			<li>Om Mig</li>
-			<li>Projekter</li>
-			<li>Kontakt</li>
-		</ul>
+		<div></div>
 	</a>
 </nav>
 <main class="main__homePage">
-	<img src="./src/images/screen1.png" alt="Computer stationær">
-	<img src="./src/images/iphone_screen1.png" alt="Smartphone">
-	<img src="./src/images/ipad_screen.png" alt="Tablet">
+	<a href=""><img class="computerScreen linkDevice" src="/assets/images/screen1.png" alt="Computer stationær"></a>
+	<a href=""><img class="smartphone linkDevice" src="/assets/images/iphone_screen1.png" alt="Smartphone"></a>
+	<a href=""><img class="tablet linkDevice" src="/assets/images/ipad_screen.png" alt="Tablet"></a>
 	<div class="homePage__innerMain">
 		<section class="homePage__headerTitle">
 			<h1>Karitas Webdesign</h1>
@@ -47,10 +54,8 @@
 		</div>
 </template>
 
-<script src="/assets/js/featured.js"></script>
-
 <script src="/assets/js/tema.js"></script>
 <script src="/assets/js/historyBack.js"></script>
-<script src="/assets/js/getToken.js"></script>
+<script src="/assets/js/nav.js"></script>
 </body>
 </html>

@@ -10,6 +10,11 @@
 	top: 30px;
 	z-index: 10;
 	right: 10px;
+	-webkit-transition: 1s ease-out;
+   	-moz-transition: 1s ease-out;
+   	-o-transition: 1s ease-out;
+   	-ms-transition: 1s ease-out;
+   	transition: 1s ease-out;
 
 	.close:before, .close:after {
 		position: absolute;
@@ -19,30 +24,63 @@
 		height: 33px;
 		width: 2px;
 		background-color: $base-color;
-	  }
-	  .close:before {
+		-webkit-transition: 1s ease-out;
+   		-moz-transition: 1s ease-out;
+   		-o-transition: 1s ease-out;
+   		-ms-transition: 1s ease-out;
+   		transition: 1s ease-out;
+	}
+	.close:before {
 		transform: rotate(90deg);
 		top: 6px;
-	  }
-	  .close:after {
+	}
+	.close:after {
 		transform: rotate(-90deg);
 		top: 12px;
-	  }
+	}
 
-	ul{
+}
+
+
+	#links{
 		display: none;
 	}
-}
+	ul li a{
+		text-decoration: none;
+		color: $base-color;
+	}
+	ul li{
+		margin: 20px;
+	}
+	#links.show{
+		display: block;
+	}
+	.linksElements{
+		font-family: 'Permanent Marker', cursive;
+		width: 80vw;
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		a{
+			text-decoration: none;
+			color: $base-color;
+		}
+		li{
+			margin: 20px;
+		}
+	}
+
+
+
 .nav:hover{
 	width: 70px;
 	height: 70px;
-	transition: 1s ease-in;
+	transition: 0.4s ease-in;
 
-	.close:before, .close:after{
-		height: 53px;
-		width: 3px;
-		left: 33px;
-		transition: 1s ease-in;
-	}
-
+		.close:before, .close:after{
+			height: 53px;
+			width: 3px;
+			left: 33px;
+			transition: .4s ease-in;
+		}
 }
