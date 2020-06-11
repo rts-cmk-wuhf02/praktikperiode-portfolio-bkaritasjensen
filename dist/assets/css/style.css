@@ -301,22 +301,26 @@ ul li {
     margin-left: 30vw;
     margin-right: 5vw;
     margin-bottom: 100px;
-    box-shadow: -3px 3px 10px #707070; }
-    .omMig__main .omMig__faerdigheder h3 {
-      margin-right: 25px;
-      font-weight: lighter;
-      font-size: 1.5em; }
-    .omMig__main .omMig__faerdigheder .single__erfaringer {
-      margin: 50px 25px;
-      width: 45%; }
-      .omMig__main .omMig__faerdigheder .single__erfaringer .ydreBox__prikErfaringer {
-        display: flex; }
-        .omMig__main .omMig__faerdigheder .single__erfaringer .ydreBox__prikErfaringer .prikErfaringer {
-          align-self: center;
-          width: 25px;
-          height: 25px;
-          background-color: white;
-          margin: 3px;
-          border-radius: 50%; }
-    .omMig__main .omMig__faerdigheder .single__erfaringer:first-child {
-      margin: 0 25px  50px 25px; }
+    box-shadow: -3px 3px 10px #707070;
+    display: flex; }
+    .omMig__main .omMig__faerdigheder .omMig__erfaringer_flexBox {
+      width: 50%; }
+      .omMig__main .omMig__faerdigheder .omMig__erfaringer_flexBox h3 {
+        margin: 0;
+        font-weight: lighter;
+        font-size: 1.5em;
+        margin-right: 10px; }
+      .omMig__main .omMig__faerdigheder .omMig__erfaringer_flexBox .single__erfaringer {
+        padding: 25px;
+        margin: 0; }
+        .omMig__main .omMig__faerdigheder .omMig__erfaringer_flexBox .single__erfaringer .ydreBox__prikErfaringer {
+          display: flex;
+          justify-content: flex-end;
+          margin: 0; }
+          .omMig__main .omMig__faerdigheder .omMig__erfaringer_flexBox .single__erfaringer .ydreBox__prikErfaringer .prikErfaringer {
+            align-self: center;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            margin: 3px;
+            border-radius: 50%; }

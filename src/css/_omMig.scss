@@ -20,32 +20,40 @@
 		margin-right: 5vw;
 		margin-bottom: 100px;
 		box-shadow: -3px 3px 10px #707070;
+		display: flex;
 
-		h3{
-			margin-right: 25px;
-			font-weight: lighter;
-			font-size: 1.5em;
-		}
-		.single__erfaringer{
-			margin: 50px 25px;
-			width: 45%;
 
-			.ydreBox__prikErfaringer{
-				display: flex;
+
+		.omMig__erfaringer_flexBox{
+			width: 50%;
+
+			h3{
+				margin: 0;
+				font-weight: lighter;
+				font-size: 1.5em;
+				margin-right: 10px;
+			}
+			.single__erfaringer{
+				padding: 25px;
+				margin: 0;
 				
-				.prikErfaringer{
-					align-self: center;
-					width: 25px;
-					height: 25px;
-					background-color: white;
-					margin: 3px;
-					border-radius: 50%;
+				.ydreBox__prikErfaringer{
+					display: flex;
+					justify-content: flex-end;
+					margin: 0;
+					
+					.prikErfaringer{
+						align-self: center;
+						width: 25px;
+						height: 25px;
+						background-color: white;
+						margin: 3px;
+						border-radius: 50%;
+					}
 				}
 			}
 		}
-		.single__erfaringer:first-child{
-			margin: 0 25px  50px 25px;
-		}
+		
 		
 		
 		
