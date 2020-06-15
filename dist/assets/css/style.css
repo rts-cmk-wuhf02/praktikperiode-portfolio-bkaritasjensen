@@ -259,8 +259,13 @@ ul li {
 
 #links.show {
   display: block; }
+  #links.show ul li {
+    list-style: none;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
 
 .linksElements {
+  letter-spacing: 5px;
   font-family: 'Permanent Marker', cursive;
   width: 80vw;
   list-style: none;
@@ -285,19 +290,29 @@ ul li {
 .omMig__main {
   background-color: #F0F0EF;
   position: relative;
-  margin: 0; }
-  .omMig__main .omMig__profilBillede {
-    max-width: 15vw;
+  margin: 0;
+  /***********  SVG BILLEDE **************/ }
+  .omMig__main .knowledgeSVG {
+    max-width: 25vw;
     z-index: 250;
     position: absolute;
-    top: -115px;
-    border-radius: 50%;
-    left: 17vw; }
+    top: -190px;
+    left: 10vw; }
+    .omMig__main .knowledgeSVG #Globe-web {
+      animation: globeWeb-spinning 1s ease;
+      transform-origin: center;
+      transform-box: fill-box; }
+
+@keyframes globeWeb-spinning {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
   .omMig__main .omMig__faerdigheder {
     background-color: #F2B164;
     height: 600px;
     width: 60vw;
-    margin-top: 250px;
+    margin-top: 300px;
     margin-left: 30vw;
     margin-right: 5vw;
     margin-bottom: 100px;
@@ -324,3 +339,19 @@ ul li {
             background-color: white;
             margin: 3px;
             border-radius: 50%; }
+  .omMig__main .cls-1 {
+    fill: #fff; }
+  .omMig__main .cls-2 {
+    fill: #dcd6e3; }
+  .omMig__main .cls-3 {
+    fill: #f2b164; }
+  .omMig__main .cls-3, .omMig__main .cls-6, .omMig__main .cls-7, .omMig__main .cls-8 {
+    fill-rule: evenodd; }
+  .omMig__main .cls-6 {
+    fill: #db5d60; }
+  .omMig__main .cls-5 {
+    fill: #3a3a3a; }
+  .omMig__main .cls-7 {
+    fill: #73706B; }
+  .omMig__main .cls-8 {
+    fill: #2e3640; }

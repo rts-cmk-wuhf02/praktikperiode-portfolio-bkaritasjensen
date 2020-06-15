@@ -3,19 +3,32 @@
 	position: relative;
 	margin: 0;
 
-	.omMig__profilBillede{
-		max-width: 15vw;
+	.knowledgeSVG{
+		max-width: 25vw;
 		z-index: 250;
 		position: absolute;
-		top: -115px;
-		border-radius: 50%;
-		left: 17vw;
+		top: -190px;
+		left: 10vw;
+
+		#Globe-web{
+			animation: globeWeb-spinning 1s ease;
+			transform-origin: center;
+			transform-box: fill-box;
+		}
+		@keyframes globeWeb-spinning {
+			from{
+				transform: rotateZ(0deg);
+			}
+			to{
+				transform: rotateZ(360deg);
+			}
+		}
 	}
 	.omMig__faerdigheder{
 		background-color: $third-background;
 		height: 600px;
 		width: 60vw;
-		margin-top: 250px;
+		margin-top: 300px;
 		margin-left: 30vw;
 		margin-right: 5vw;
 		margin-bottom: 100px;
@@ -59,7 +72,8 @@
 		
 	}
 
+	/***********  SVG BILLEDE **************/
 
-
+	.cls-1{fill:#fff}.cls-2{fill:#dcd6e3}.cls-3{fill:#f2b164}.cls-3,.cls-6,.cls-7,.cls-8{fill-rule:evenodd}.cls-6{fill:#db5d60}.cls-5{fill:rgb(58, 58, 58)}.cls-7{fill:#73706B}.cls-8{fill:#2e3640}
 
 }

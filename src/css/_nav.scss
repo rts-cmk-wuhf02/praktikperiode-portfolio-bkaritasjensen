@@ -54,8 +54,14 @@
 	}
 	#links.show{
 		display: block;
+		ul li{
+			list-style: none;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
 	}
 	.linksElements{
+		letter-spacing: 5px;
 		font-family: 'Permanent Marker', cursive;
 		width: 80vw;
 		list-style: none;
