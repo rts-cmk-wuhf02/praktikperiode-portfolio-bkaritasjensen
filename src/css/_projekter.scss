@@ -1,8 +1,32 @@
 .projekter__main{
+	height: 1000px;
 	h4{
 		margin: 0;
 		margin-top: 70px;
 		margin-left: 100px;
+	}
+	aside{
+		right: 0;
+		position: fixed;
+		margin: 0 20px;
+		top: 50vh;
+
+		.aktivSide{
+			width: 10px;
+			height: 5px;
+			background-color: $base-color;
+			margin: 10px 5px;
+			box-shadow: $box-shadow;
+		}
+		.side{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $base-color;
+			margin: 5px;
+			box-shadow: $box-shadow;
+		}
+
 	}
 
 .projekter__opgaver{
@@ -17,14 +41,20 @@
 		margin-top: 100px;
 		box-shadow: $box-shadow;
 
-		h6{
+		h5{
 			text-align: center;
-			margin-top: 200px;
+			margin-top: 180px;
 		}
 
-		p{
-			margin-top: 50px;
+		h6{
+			margin: 0;
+			margin-top: 25px;
 			text-align: center;
+			font-family: $drawing-font;
+			font-size: 1.5em;
+		}
+		p{
+			margin: 20px;
 		}
 	}
 	img{
