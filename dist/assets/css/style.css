@@ -427,6 +427,31 @@ ul li {
   .omMig__main .cls-8 {
     fill: #2e3640; }
 
-.projekter__opgaver {
+.projekter__main h4 {
+  margin: 0;
+  margin-top: 70px;
+  margin-left: 100px; }
+
+.projekter__main .projekter__opgaver {
   display: flex;
   justify-content: space-evenly; }
+  .projekter__main .projekter__opgaver .projekter__baggrundsFarve {
+    height: 350px;
+    width: 290px;
+    background-color: #F2B164;
+    position: relative;
+    margin-top: 100px;
+    box-shadow: -3px 3px 10px #707070; }
+    .projekter__main .projekter__opgaver .projekter__baggrundsFarve h6 {
+      text-align: center;
+      margin-top: 200px; }
+    .projekter__main .projekter__opgaver .projekter__baggrundsFarve p {
+      margin-top: 50px;
+      text-align: center; }
+  .projekter__main .projekter__opgaver img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    left: 16%;
+    top: -30px; }

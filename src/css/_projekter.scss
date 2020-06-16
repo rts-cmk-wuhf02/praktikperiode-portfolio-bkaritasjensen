@@ -1,4 +1,39 @@
+.projekter__main{
+	h4{
+		margin: 0;
+		margin-top: 70px;
+		margin-left: 100px;
+	}
+
 .projekter__opgaver{
 	display: flex;
 	justify-content: space-evenly;
+
+	.projekter__baggrundsFarve{
+		height: 350px;
+		width: 290px;
+		background-color: $third-background;
+		position: relative;
+		margin-top: 100px;
+		box-shadow: $box-shadow;
+
+		h6{
+			text-align: center;
+			margin-top: 200px;
+		}
+
+		p{
+			margin-top: 50px;
+			text-align: center;
+		}
+	}
+	img{
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		position: absolute;
+		left: 16%;
+		top: -30px;
+	}
+}
 }
