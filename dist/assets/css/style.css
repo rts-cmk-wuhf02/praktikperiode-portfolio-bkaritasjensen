@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
@@ -10,6 +11,13 @@ body {
 .navOut__mainUp {
   margin: 0;
   transition: .6s ease-in; }
+
+.titlePage {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 5px;
+  margin: 20px 40px;
+  color: #2E3640;
+  font-size: 1.7em; }
 
 /* font-family: 'Permanent Marker', cursive; */
 /* ////////////////////////////// LIGHT THEME ////////////////////////////
@@ -274,6 +282,8 @@ ul li {
   .linksElements a {
     text-decoration: none;
     color: #2E3640; }
+  .linksElements a:hover {
+    color: #DB5D60; }
   .linksElements li {
     margin: 20px; }
 
@@ -299,15 +309,67 @@ ul li {
     top: -190px;
     left: 10vw; }
     .omMig__main .knowledgeSVG #Globe-web {
-      animation: globeWeb-spinning 1s ease;
+      animation: globeWeb-spinning 3s ease;
       transform-origin: center;
       transform-box: fill-box; }
+    .omMig__main .knowledgeSVG #W-1 {
+      animation: www 0.5s ease-in; }
+    .omMig__main .knowledgeSVG #W-2 {
+      animation: www 1s ease-in; }
+    .omMig__main .knowledgeSVG #W-3 {
+      animation: www 1.5s ease-in; }
+    .omMig__main .knowledgeSVG #Element-6 [data-name="Shape"] {
+      animation: loadCode 01s ease; }
+    .omMig__main .knowledgeSVG #line-1 {
+      animation: loadCode 0.2s ease-in; }
+    .omMig__main .knowledgeSVG #line-2 {
+      animation: loadCode 0.4s ease-in; }
+    .omMig__main .knowledgeSVG #line-3 {
+      animation: loadCode 0.6s ease-in; }
+    .omMig__main .knowledgeSVG #line-4 {
+      animation: loadCode 0.8s ease-in; }
+    .omMig__main .knowledgeSVG #line-5 {
+      animation: loadCode 1s ease-in; }
+    .omMig__main .knowledgeSVG #line-6 {
+      animation: loadCode 1.2s ease-in; }
+    .omMig__main .knowledgeSVG #line-7 {
+      animation: loadCode 1.4s ease-in; }
+    .omMig__main .knowledgeSVG #line-8 {
+      animation: loadCode 1.6s ease-in; }
+    .omMig__main .knowledgeSVG #line-9 {
+      animation: loadCode 1.8s ease-in; }
+    .omMig__main .knowledgeSVG #line-10 {
+      animation: loadCode 2s ease-in; }
+    .omMig__main .knowledgeSVG #line-11 {
+      animation: loadCode 2.2s ease-in; }
+    .omMig__main .knowledgeSVG #line-12 {
+      animation: loadCode 2.4s ease-in; }
+    .omMig__main .knowledgeSVG #line-13 {
+      animation: loadCode 2.6s ease-in; }
+    .omMig__main .knowledgeSVG #line-14 {
+      animation: loadCode 2.8s ease-in; }
+    .omMig__main .knowledgeSVG #line-15 {
+      animation: loadCode 3s ease-in; }
 
 @keyframes globeWeb-spinning {
   from {
     transform: rotateZ(0deg); }
   to {
     transform: rotateZ(360deg); } }
+
+@keyframes www {
+  from {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+@keyframes loadCode {
+  from {
+    transform: perspective(0); }
+  to {
+    transform: perspective(2); } }
   .omMig__main .omMig__faerdigheder {
     background-color: #F2B164;
     height: 600px;
@@ -339,6 +401,15 @@ ul li {
             background-color: white;
             margin: 3px;
             border-radius: 50%; }
+          .omMig__main .omMig__faerdigheder .omMig__erfaringer_flexBox .single__erfaringer .ydreBox__prikErfaringer .rød {
+            background-color: #DB5D60;
+            animation: rødPrik 0.9s ease; }
+
+@keyframes rødPrik {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .omMig__main .cls-1 {
     fill: #fff; }
   .omMig__main .cls-2 {
@@ -355,3 +426,7 @@ ul li {
     fill: #73706B; }
   .omMig__main .cls-8 {
     fill: #2e3640; }
+
+.projekter__opgaver {
+  display: flex;
+  justify-content: space-evenly; }

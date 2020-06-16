@@ -71,6 +71,9 @@
 			text-decoration: none;
 			color: $base-color;
 		}
+		a:hover{
+			color: $third-color;
+		}
 		li{
 			margin: 20px;
 		}
