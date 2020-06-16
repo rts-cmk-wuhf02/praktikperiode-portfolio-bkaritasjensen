@@ -218,6 +218,10 @@ html[data-theme='dark']{
       .main__homePage .homePage__innerMain .homePage__slogan h4:last-child {
         font-family: 'Permanent Marker', cursive; }
 
+.nav__section {
+  background-color: white;
+  margin: 0; }
+
 .nav {
   width: 50px;
   height: 50px;
@@ -278,7 +282,8 @@ ul li {
   width: 80vw;
   list-style: none;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin: 0; }
   .linksElements a {
     text-decoration: none;
     color: #2E3640; }
@@ -438,7 +443,9 @@ ul li {
     fill: #2e3640; }
 
 .projekter__main {
-  height: 1000px; }
+  height: 1000px;
+  color: #2E3640;
+  position: relative; }
   .projekter__main h4 {
     margin: 0;
     margin-top: 70px;
@@ -471,12 +478,17 @@ ul li {
       position: relative;
       margin-top: 100px;
       box-shadow: -3px 3px 10px #707070; }
-      .projekter__main .projekter__opgaver .projekter__baggrundsFarve h5 {
-        text-align: center;
-        margin-top: 180px; }
+      .projekter__main .projekter__opgaver .projekter__baggrundsFarve .projekter__hjerteBox {
+        width: 50px;
+        height: 50px;
+        background-color: #F0F0EF;
+        border-radius: 50%;
+        position: absolute;
+        left: 41%;
+        top: 41%; }
       .projekter__main .projekter__opgaver .projekter__baggrundsFarve h6 {
         margin: 0;
-        margin-top: 25px;
+        margin-top: 210px;
         text-align: center;
         font-family: "Permanent Marker", cursive;
         font-size: 1.5em; }
