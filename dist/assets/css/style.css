@@ -15,7 +15,7 @@ body {
 .titlePage {
   font-family: 'Permanent Marker', cursive;
   letter-spacing: 5px;
-  margin: 20px 40px;
+  margin: 90px 40px;
   color: #2E3640;
   font-size: 1.7em; }
 
@@ -296,6 +296,14 @@ ul li {
     width: 3px;
     left: 33px;
     transition: .4s ease-in; }
+
+.Header__logo {
+  position: absolute;
+  top: 13px;
+  z-index: 10;
+  left: 10px;
+  letter-spacing: 5px;
+  font-weight: lighter; }
 
 .omMig__main {
   background-color: #F0F0EF;

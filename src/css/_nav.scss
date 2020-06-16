@@ -93,3 +93,11 @@
 			transition: .4s ease-in;
 		}
 }
+.Header__logo{
+	position: absolute;
+	top: 13px;
+	z-index: 10;
+	left: 10px;
+	letter-spacing: 5px;
+	font-weight: lighter;
+}
