@@ -142,51 +142,49 @@ html[data-theme='dark']{
 
  */
 .main__homePage {
-  background: linear-gradient(140deg, #DB5D60 50%, #F2B164 50%);
+  background: #DB5D60;
   height: 100vh;
   position: relative;
-  padding-top: 70px; }
+  padding-top: 70px;
+  animation-duration: 1s; }
+  .main__homePage .bg {
+    position: fixed;
+    left: -50%;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    animation: animate 9s ease-in-out infinite alternate;
+    background: linear-gradient(200deg, #DB5D60 50%, #F2B164 50%);
+    opacity: .5;
+    z-index: -1; }
+  .main__homePage .lag-2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 8s; }
+  .main__homePage .lag-3 {
+    animation-duration: 6s; }
+
+@keyframes animate {
+  0% {
+    transform: translate(-60%); }
+  100% {
+    transform: translate(40%); } }
   .main__homePage .computerScreen {
     position: absolute;
-    max-width: 250px;
-    left: 60vw;
-    top: 350px; }
+    max-width: 200px;
+    left: 65vw;
+    top: 380px; }
   .main__homePage .smartphone {
     position: absolute;
-    max-width: 100px;
-    left: 65vw;
+    max-width: 50px;
+    left: 75vw;
     top: 260px; }
   .main__homePage .tablet {
     position: absolute;
-    max-width: 150px;
-    left: 73vw;
-    top: 250px; }
-  .main__homePage .linkDevice:hover {
-    animation: shake 0.5s; }
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg); }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg); }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg); }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg); }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg); }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg); }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg); }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg); }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg); }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg); }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg); } }
+    max-width: 180px;
+    left: 60vw;
+    top: 200px; }
+  .main__homePage .linkDevice {
+    animation-duration: 2.5s; }
   .main__homePage .homePage__innerMain {
     background-color: #F0F0EF;
     margin-left: 70px;
@@ -316,6 +314,7 @@ ul li {
   background-color: #F0F0EF;
   position: relative;
   margin: 0;
+  animation-duration: 1s;
   /***********  SVG BILLEDE **************/ }
   .omMig__main .knowledgeSVG {
     max-width: 25vw;
@@ -445,7 +444,8 @@ ul li {
 .projekter__main {
   height: 1000px;
   color: #2E3640;
-  position: relative; }
+  position: relative;
+  animation-duration: 1s; }
   .projekter__main h4 {
     margin: 0;
     margin-top: 70px;
